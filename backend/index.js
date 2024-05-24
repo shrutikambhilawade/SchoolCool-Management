@@ -12,7 +12,7 @@ dotenv.config();
 app.use(express.json({ limit: '10mb' }))
 app.use(cors(
     {
-        origin: [],
+        origin: ["https://school-cool-management-firw.vercel.app/"],
         methods: ["POST","GET"],
         credentials:true
     }
