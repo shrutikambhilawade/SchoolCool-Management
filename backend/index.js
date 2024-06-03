@@ -6,7 +6,7 @@ const dotenv = require("dotenv")
 const app = express()
 const Routes = require("./routes/route.js")
 
-const PORT = process.env.PORT || 5000
+const PORT = 'mongodb+srv://shrutikambhilawade:Shrutika@123@cluster0.gowlorr.mongodb.net/?retryWrites=true&w=majority'
 
 dotenv.config();
 app.use(express.json({ limit: '10mb' }))
