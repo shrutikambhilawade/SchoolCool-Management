@@ -10,14 +10,18 @@ dotenv.config();
 
 const PORT =  process.env.PORT || 5000;
 const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://Shrutikambhilawade:Shrutika%40123@cluster1.s2ygsih.mongodb.net/test?retryWrites=true&w=majority";
+
 app.use(express.json({ limit: '10mb' }))
 app.use(cors(
     {
-        origin: ["https://school-cool-management-firw.vercel.app"],
+        origin: ["https://school-cool-management-firw.vercel.app", "http://localhost:3000"],
         methods: ["POST","GET"],
+        allowedHeaders: ["Content-Type", "Authorization"],
         credentials:true
     }
-))
+));
+
+app.options('*',cors());
 
 mongoose
     .connect(MONGODB_URL, {

@@ -11,7 +11,7 @@ import {
     getFailed,
     getError,
 } from './userSlice';
-const REACT_APP_BASE_URL = "https://school-cool-management-backend.vercel.app/"
+const REACT_APP_BASE_URL = "https://school-cool-management-backend.vercel.app"
 
 
 export const loginUser = (fields, role) => async (dispatch) => {
