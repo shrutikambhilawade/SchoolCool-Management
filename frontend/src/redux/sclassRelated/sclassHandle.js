@@ -12,7 +12,7 @@ import {
     getSubDetailsRequest
 } from './sclassSlice';
 
-const REACT_APP_BASE_URL = "https://school-cool-management-7xha.vercel.app/";
+const REACT_APP_BASE_URL = "https://school-cool-management-backend.vercel.app/";
 
 
 export const getAllSclasses = (id, address) => async (dispatch) => {

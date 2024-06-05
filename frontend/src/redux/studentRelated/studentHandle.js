@@ -7,7 +7,7 @@ import {
     stuffDone
 } from './studentSlice';
 
-const REACT_APP_BASE_URL = "https://school-cool-management-7xha.vercel.app/";
+const REACT_APP_BASE_URL = "https://school-cool-management-backend.vercel.app/";
 
 
 export const getAllStudents = (id) => async (dispatch) => {
